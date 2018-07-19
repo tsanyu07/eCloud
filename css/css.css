@@ -5,7 +5,7 @@ html,body{
 }
 
 html,body *{
-	font-family:  FontAwesome,Arial, sans-serif,Helvetica,'微軟正黑體';
+	font-family: FontAwesome,Arial, sans-serif,Helvetica,'微軟正黑體';
 }
 
 
@@ -87,6 +87,10 @@ header{
 	float: left;
 	display: inline-block;
 	margin-top: 10px;
+}
+
+.header_search{
+	display: none;
 }
 
 
@@ -175,6 +179,18 @@ nav li a:hover{
 	display: none;
 }
 
+.dropdown_list:before{
+	content:url(../images/triangle.png);
+	position: absolute;
+	width: 15px;
+	height: 10px;
+	top: -14px;
+	left: 22px;
+}
+
+.header.fixed .dropdown_list:before{
+	content:'';
+}
 
 
 .dropdown_list li a{
@@ -218,9 +234,9 @@ nav .dropdown_list li a{
 }
 
 nav .dropdown_list li a:hover{
-	color:#333;
+	color:#349CD6;
+	background-color:#e2e2e2; 
 }
-
 
 .s_menu{
 	display: none;
@@ -432,7 +448,7 @@ nav .dropdown_list li a:hover{
 
 .blogBox_half_article_cover{
 	width: 100%;
-	height: 440px;
+	height: 430px;
 }
 
 .blogBox_half_article_img{

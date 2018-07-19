@@ -73,7 +73,7 @@
 
   .s_menu.active li{
     display: block;
-    border-bottom: 1px solid #5a5a5a;
+    border-bottom: 1px solid #777777;
 
   }
 
@@ -86,6 +86,7 @@
     right:20px;
     top:0;
     position: absolute;
+    font-family: FontAwesome;
   }
 
   .s_menu_dropdown.active{
@@ -248,6 +249,34 @@
     width: 60%;
     padding-top: 40%;
   }
+
+
+  .sideBlog_search{
+    display: none;
+  }
+
+  .header_search{
+    display: inline-block;
+    position: absolute;
+    right:70px;
+    top:14px;
+    width: 150px;
+    height: 38px;
+  }
+
+  .header_search input{
+    width: 100%;
+    padding: 11px;
+    padding-right:30px;
+    border:1px solid #ddd;
+    border-radius:5px;
+  }
+
+  .header_search a{
+      position: absolute;
+      right: 9px;
+      top:13px;
+  }
 }
 
 
@@ -370,6 +399,10 @@
     height: 115px;
   }
 
+  .conGray h1, .conBlue h1{
+    text-align: center;
+  }
+
 }
 
 @media(max-width:700px){
@@ -479,6 +512,22 @@
 
   .mainArticle_recommend_slide li{
     padding-top:27% ;
+  }
+
+  .header_search{
+    width: 130px;
+    right: 55px;
+  }
+
+  .haeder_logo{
+    width: 96px;
+    height: 43px;
+    margin-top: 15px;
+    margin-left: -12px;
+  }
+
+  .haeder_ham{
+    margin-right: -12px;
   }
 
 }
