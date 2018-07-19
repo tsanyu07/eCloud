@@ -86,9 +86,7 @@
     right:20px;
     top:0;
     position: absolute;
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
+    font:normal normal normal 16px/1 FontAwesome;
   }
 
   .s_menu_dropdown.active{
