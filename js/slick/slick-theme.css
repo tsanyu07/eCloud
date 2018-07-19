@@ -238,6 +238,7 @@
     content:'\f104';
     margin-right: 1px;
     display: inline-block;
+    font:normal normal normal 48px/1 FontAwesome;
     color:#349CD6;
     opacity:0.9;
     font-size: 48px;
@@ -245,13 +246,14 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     left:0;
-    font:normal normal normal 48px/1 FontAwesome;
+    
 }
 
 .customerCon_slide .slick-next:before{
     content:'\f105';
     left: 1px;
     display: inline-block;
+    font:normal normal normal 48px/1 FontAwesome;
     color:#349CD6;
     opacity:0.9;
     font-size: 48px;
@@ -259,7 +261,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     right:0;
-    font:normal normal normal 48px/1 FontAwesome;
+    
 }
 
 .mainArticle_recommend .slick-dots{
