@@ -367,7 +367,7 @@
   }
 
   .serviseCon:before{
-    height: 140px;
+    height: 115px;
   }
 
 }
@@ -426,6 +426,27 @@
     padding-top: 220px;
   }
 
+  .tabs_content_img{
+    width: 100px;
+    margin:0 auto;
+  }
+
+  .tabs_content_img img{
+    max-width: 100%;
+  }
+
+  .serviseCon .ui-tabs .ui-tabs-panel{
+    padding: 15px;
+  }
+
+  .serviseCon{
+    padding-top: 20px;
+  }
+
+  .blogBox_4article .blogBox_half_article{
+    width: 100%;
+  }
+
 }
 
 
@@ -442,6 +463,10 @@
 
   .conBlue_features li{
     padding: 0 10px;
+  }
+
+  .serviseCon:before{
+    height: 127px;
   }
 }
 

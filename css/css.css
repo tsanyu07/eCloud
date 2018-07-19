@@ -277,6 +277,23 @@ nav .dropdown_list li a:hover{
 	padding: 50px 0 140px;
 	background: url(../images/line_bg_g.png) center bottom no-repeat;
 	background-size: 100%;
+	position: relative;
+}
+
+.atlasCon section{
+	position: relative;
+	z-index: 2;
+}
+
+.atlasCon_gradient{
+	background: linear-gradient(0deg, #adadad 0%, #F0F0F0 100%);
+	opacity: .2;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
 }
 
 .MSPCon{
@@ -475,6 +492,13 @@ nav .dropdown_list li a:hover{
 	color:#349CD6;
 	font-size: 1em;
 }
+
+
+.blogBox_4article .blogBox_half_article_img{
+	padding-top: 40%;
+}
+
+
 
 .testimonial{
 	background-image: linear-gradient(0deg, #C3E7F9 0%, #A6C9EA 100%);
