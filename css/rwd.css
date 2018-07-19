@@ -84,7 +84,7 @@
   .s_menu_dropdown:after{
     content:'\f107';
     right:20px;
-    top:0;
+    top:27px;
     position: absolute;
     font:normal normal normal 16px/1 FontAwesome;
   }
@@ -96,8 +96,9 @@
   .s_menu_dropdown.active:after{
     content:'\f106';
     right:20px;
-    top:0;
+    top:27px;
     position: absolute;
+    font:normal normal normal 16px/1 FontAwesome;
   }
 
   .s_menu_dropdown_list{

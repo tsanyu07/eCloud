@@ -250,7 +250,7 @@
 
 .customerCon_slide .slick-next:before{
     content:'\f105';
-    -left: 1px;
+    left: 1px;
     display: inline-block;
     color:#349CD6;
     opacity:0.9;
