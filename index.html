@@ -95,7 +95,23 @@
             return false;
         });
 
+        // 手機版聯絡我們跳轉至下方時，將下拉選單關閉
+        $('.s_menu .orangeMenu').click(function() {
+			if($('.s_menu').hasClass("active")){
+				$('.s_menu').removeClass("active");
+			}else{
+				$('.s_menu').addClass("active");
+			}
+		});
 
+        // 手機版 WhoWeAre 跳轉至下方時，將下拉選單關閉
+		$('.s_menu .WhoWeAreMenu').click(function() {
+			if($('.s_menu').hasClass("active")){
+				$('.s_menu').removeClass("active");
+			}else{
+				$('.s_menu').addClass("active");
+			}
+		});
 
   	});
 </script>
@@ -132,7 +148,7 @@
 					     				<li><a href="optimization.html">效能優化</a></li>
 					     			</ul>
 					     		</li>
-					     		<li><a href="index.html#WhoWeAre" id="WhoWeAreScroll">HWO WE ARE</a></li>
+					     		<li><a href="index.html#WhoWeAre" id="WhoWeAreScroll" class="WhoWeAreMenu">HWO WE ARE</a></li>
 					     		<li class="dropdownLi"><a href="javascript:;" class="dropdown">部落格</a>
 					     			<ul class="dropdown_list">
 					     				<li><a href="blog.html">全部文章</a></li>
@@ -165,7 +181,7 @@
 					     				<li><a href="optimization.html">效能優化</a></li>
 					     			</ul>
 					     		</li>
-					     		<li><a href="index.html#WhoWeAre">HWO WE ARE</a></li>
+					     		<li><a href="index.html#WhoWeAre" id="WhoWeAreScroll" class="WhoWeAreMenu">HWO WE ARE</a></li>
 					     		<li><a href="javascript:;" class="s_menu_dropdown">部落格</a>
 				     				<ul class="s_menu_dropdown_list">
 					     				<li><a href="blog.html">全部文章</a></li>
