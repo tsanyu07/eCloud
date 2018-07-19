@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--for ie-->
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE; IE=10; IE=9; IE=8;" />
+<meta charset="UTF-8">
+
+<title>伊雲谷Amazon Web Service雲端專家</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="icon" href="theme/tw/images/favicon.png">
+<meta name="title" content="資訊安全健檢與產品，阻擋惡意攻擊提升網站安全防護">
+<meta name="description" content="完整網路安全技術產品，提供進階威脅防護。Deep Security 趨勢科技防護方案、弱點掃描、原始碼檢測、數位加解密去識別化、WAF 應用程式防火牆、DDOS 流量清洗。"/>
+<meta property="og:url" content="">
+<meta property="og:image" content="images/fb_share.png">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+<link rel="shortcut icon" href="">
+
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/css.css">
+<link rel="stylesheet" href="css/rwd.css">
+<link rel="stylesheet" href="js/slick/slick.css">
+<link rel="stylesheet" href="js/slick/slick-theme.css">
+
+<!--css animations-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+<script type="text/javascript" src="js/jquery-3.2.0.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type='text/javascript' src='js/jquery-imgLiquid.min.js'></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+
+<!-- Add fancyBox main JS and CSS files -->
+<script type="text/javascript" src="js/fancybox/jquery.fancybox.js"></script>
+<link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox.css" media="screen"/>
+
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
+
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<link rel="stylesheet" type="text/css" href="js/jquery-ui.css">
+
+
+<!--[if IE]>
+    <script>
+        document.createElement("header");
+        document.createElement("menu");
+        document.createElement("nav");
+        document.createElement("section");
+        document.createElement("article");
+        document.createElement("aside");
+        document.createElement("figure");
+        document.createElement("hgroup");
+        document.createElement("footer");
+        document.createElement("address");
+    </script>
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <script src="../js/html5.js"></script>
+<![endif]-->
+<script>
+	$( function() {
+	  	//slider
+	  	$('.customerCon_slide').slick({
+    		arrows:true,
+    		dots:false,
+    		slidesToShow: 3,
+    		slidesToScroll: 3,
+    		responsive: [{
+                breakpoint: 901,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                }
+            }, {
+                breakpoint: 601,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            }]
+  		});
+
+
+
+  		// BANNER 跳轉至下方表單
+  		$('#securityScroll').click(function(){
+            var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+            $body.animate({
+                scrollTop: $('#securityContact').offset().top
+            }, 1000);
+
+            return false;
+        });
+
+        // MENU 跳轉至下方表單
+  		$('#securityMenuScroll').click(function(){
+            var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+            $body.animate({
+                scrollTop: $('#securityContact').offset().top
+            }, 1000);
+
+            return false;
+        });
+
+  		// 手機版聯絡我們跳轉至下方時，將下拉選單關閉
+        $('.s_menu .orangeMenu').click(function() {
+		if($('.s_menu').hasClass("active")){
+			$('.s_menu').removeClass("active");
+		}else{
+			$('.s_menu').addClass("active");
+		}
+		});
+  	});
+</script>
+
+</head>
+<body class="index">
+	<div class="wrap">
+
+		<!-- 主頁KV -->
+		<div class="banner banner_inner">
+			<header class="header">
+					<section>
+						<a href="index.html" class="haeder_logo">
+						</a>
+				        <div class="haeder_ham">
+				            <a href="javascript:;">
+				            	<i class="fa fa-bars"></i>
+				            </a>
+				        </div>
+					    <nav>
+					    	<!-- 電腦版顯示此 menu --> 
+					     	<ul class="haeder_nav_menu">
+					     		<li class="dropdownLi"><a href="javascript:;" class="dropdown">雲端產品</a>
+					     			<ul class="dropdown_list">
+					     				<li><a href="Atlas.html">Atlas</a></li>
+					     			</ul>
+					     		</li>
+					     		<li class="dropdownLi"><a href="javascript:;" class="dropdown">雲端解決方案</a>
+					     			<ul class="dropdown_list">
+					     				<li><a href="security.html">資訊安全</a></li>
+					     				<li><a href="direct-connect.html">專線</a></li>
+					     				<li><a href="storage-backup.html">備份及災難備援</a></li>
+					     				<li><a href="big-data.html">大數據與物聯網 IoT</a></li>
+					     				<li><a href="optimization.html">效能優化</a></li>
+					     			</ul>
+					     		</li>
+					     		<li><a href="index.html#WhoWeAre" id="WhoWeAreScroll">HWO WE ARE</a></li>
+					     		<li class="dropdownLi"><a href="javascript:;" class="dropdown">部落格</a>
+					     			<ul class="dropdown_list">
+					     				<li><a href="blog.html">全部文章</a></li>
+					     				<li><a href="blog.html">最新消息</a></li>
+					     				<li><a href="blog.html">Atlas</a></li>
+					     				<li><a href="blog.html">資訊安全</a></li>
+					     				<li><a href="blog.html">專線</a></li>
+					     				<li><a href="blog.html">備份及災難備援</a></li>
+					     				<li><a href="blog.html">大數據與物聯網 IoT</a></li>
+					     				<li><a href="blog.html">效能優化</a></li>
+				     				</ul>
+					     		</li>
+					     		<li><a href="#securityContact" class="orangeMenu" id="securityMenuScroll"><span>聯絡我們</span></a></li>
+					     	</ul>
+
+
+					     	<!-- 手機版顯示此 menu --> 
+					     	<ul class="s_menu">
+					     		<li><a href="javascript:;" class="s_menu_dropdown">雲端產品</a>
+					     			<ul class="s_menu_dropdown_list">
+					     				<li><a href="Atlas.html">Atlas</a></li>
+					     			</ul>
+					     		</li>
+					     		<li><a href="javascript:;" class="s_menu_dropdown">雲端解決方案</a>
+					     			<ul class="s_menu_dropdown_list">
+					     				<li><a href="security.html">資訊安全</a></li>
+					     				<li><a href="direct-connect.html">專線</a></li>
+					     				<li><a href="storage-backup.html">備份及災難備援</a></li>
+					     				<li><a href="big-data.html">大數據與物聯網 IoT</a></li>
+					     				<li><a href="optimization.html">效能優化</a></li>
+					     			</ul>
+					     		</li>
+					     		<li><a href="index.html#WhoWeAre">HWO WE ARE</a></li>
+					     		<li><a href="javascript:;" class="s_menu_dropdown">部落格</a>
+				     				<ul class="s_menu_dropdown_list">
+					     				<li><a href="blog.html">全部文章</a></li>
+					     				<li><a href="blog.html">最新消息</a></li>
+					     				<li><a href="blog.html">Atlas</a></li>
+					     				<li><a href="blog.html">資訊安全</a></li>
+					     				<li><a href="blog.html">專線</a></li>
+					     				<li><a href="blog.html">備份及災難備援</a></li>
+					     				<li><a href="blog.html">大數據與物聯網 IoT</a></li>
+					     				<li><a href="blog.html">效能優化</a></li>
+				     				</ul>
+					     		</li>
+					     		<li><a href="#securityContact" class="orangeMenu" id="securityMenuScroll"><span>聯絡我們</span></a></li>
+					     	</ul>
+					    </nav>
+					</section>
+				</header>
+			<div class="banner_title banner_servise">
+				<h1>資訊安全解決方案</h1>
+				<h2>資訊安全防護沒有所謂的最終點，只有不斷的優化與加強防護</h2>
+				<a href="#securityContact" class="orangeBtn" id="securityScroll">我有興趣</a>	
+			</div>
+			<div class="banner_bg imgLiquid">
+				<img src="images/banner_security.png">
+			</div>
+		</div>
+
+		<div class="con conGray conCenterList">
+			<section>
+				<h1>Deep Security 完整防護方案</h1>
+				<h2>保護企業應用程式，檢測惡意程式及建立防火牆，以確保資料不會外洩導致營運中斷或經濟損失</h2>
+				<div class="con_list">
+					<ul>
+						<li>一致性監控實體、虛擬、雲端及混合環境</li>
+						<li>記錄檔檢查並評鑑網站信譽等級</li>
+						<li>簡化資安作業並提高法歸遵循能力</li>
+						<li>即時監測、快速回應分析與阻擋可能的潛在威脅攻擊</li>
+						<li>可提供軟體或 SaaS 服務形式</li>
+					</ul>
+				</div>
+				<div class="conCenterList_imgRight">
+					<img src="images/security01.svg">
+				</div>
+			</section>
+		</div>
+
+		<div class="con conLeft conBlue clearfix">
+			<section>
+				<div class="con_list">
+					<h1>弱點掃描</h1>
+					<h2>企業可藉由弱點掃描工具找出整套系統上層安全性，也同時建議自動化工具產生的報告，須由專業弱點掃描團隊評估後給予個別建議</h2>
+					<ul>
+						<li>使用自動化工具對系統、網站及程式碼進行風險評估</li>
+						<li>模擬惡意使用者的瀏覽行為或是可能機會輸入的欄位送出惡意數值，紀錄回應狀態</li>
+						<li>程式開發團隊最後測試驗證</li>
+					</ul>
+				</div>
+				<div class="conCenterList_imgLeft">
+					<img src="images/security02.svg">
+				</div>
+			</section>
+		</div>
+
+		<div class="con conGray conRight clearfix">
+			<section>
+				<div class="con_list">
+				<h1>滲透測試</h1>
+				<h2>根據企業環境模擬網路駭客入侵時的思考與行為模式，從而規劃檢測內容與流程，對網路或主機進行攻擊測試</h2>
+					<ul>
+						<li>了解系統與程式規劃安全上漏洞與盲點</li>
+						<li>70% 自動化檢測，30% 資安技術人員模擬滲透</li>
+						<li>滲透團隊提出報告並給予專業修正建議，以加強企業網路安全性，降低企業資安風險</li>
+					</ul>
+				</div>
+				<div class="conCenterList_imgRight">
+					<img src="images/security03.svg">
+				</div>
+			</section>
+		</div>
+
+		<div class="con conLeft conBlue clearfix">
+			<section>
+				<div class="con_list">
+					<h1>原始碼檢測</h1>
+					<h2>原始碼檢測是網頁開發過程中針對程式碼的一種第三方稽核方式，以檢查開發過程中原始碼是否藏有潛在安全威脅</h2>
+					<ul>
+						<li>將原始碼以自動工具掃描，快速產出報告與弱點分析，重新修復後重複檢測直到無安全威脅存在</li>
+						<li>提供修復協助或諮詢，以降低程式碼中的資訊安全問題</li>
+						<li>可提供軟體或 SaaS 服務形式</li>
+					</ul>
+				</div>
+				<div class="conCenterList_imgLeft">
+					<img src="images/security04.svg">
+				</div>
+			</section>
+		</div>
+
+		<div class="con conGray conRight clearfix">
+			<section>
+				<div class="con_list">
+					<h1>數位加解密及去識別化</h1>
+					<h2>數位安全解決方案以保護、驗證及管理個人資料或敏感性資料</h2>
+					<ul>
+						<li>軟件應用的開發如數位金鑰管理、數位加密、應用加密、虛擬機加密、資料庫欄位加密、去識別化服務方案</li>
+						<li>個人行動服務、支付安全、雲端認證、身份與隱私保護</li>
+						<li>牽涉敏感性資料之產業或個人設備皆適用</li>
+					</ul>
+				</div>
+				<div class="conCenterList_imgRight">
+					<img src="images/security05.svg">
+				</div>
+			</section>
+		</div>
+
+		<div class="con conBlue">
+			<section>
+				<ul class="conBlue_features">
+					<li>
+						<div class="conBlue_features_img">
+							<img src="images/security_icon01.svg">
+						</div>
+						<div class="conBlue_features_txt">
+							<h2>BOT 網頁機器人防護</h2>
+							<p>防止惡意網頁機器人、非人為流量造成網頁癱瘓及影響商業分析</p>
+						</div>
+					</li>
+					<li>
+						<div class="conBlue_features_img">
+							<img src="images/security_icon02.svg">
+						</div>
+						<div class="conBlue_features_txt">
+							<h2>資料庫稽核系統(DAM)</h2>
+							<p>協助授權機構評估、監測和稽核資料庫</p>
+						</div>
+					</li>
+					<li>
+						<div class="conBlue_features_img">
+							<img src="images/security_icon03.svg">
+						</div>
+						<div class="conBlue_features_txt">
+							<h2>DDOS 流量清洗</h2>
+							<p>有效辨別、阻擋惡意攻擊，並減緩攻擊強度以降低客戶的網路負荷量</p>
+						</div>
+					</li>
+					<li>
+						<div class="conBlue_features_img">
+							<img src="images/security_icon04.svg">
+						</div>
+						<div class="conBlue_features_txt">
+							<h2>應用程式防火牆(WAF)</h2>
+							<p>針對第一線網頁應用層設計的惡意防護阻擋防火牆</p>
+						</div>
+					</li>
+				</ul>
+			</section>
+		</div>
+		
+
+
+		<!-- 合作夥伴 -->
+		<div class="con customerCon">
+			<section>
+				<h1>合作夥伴</h1>
+				<ul class="customerCon_slide">
+					<li>
+						<div>
+							<img src="images/security_logo_01.svg" title="" alt="">
+						</div>
+					</li>
+					<li>
+						<div>
+							<img src="images/security_logo_02.svg" title="" alt="">
+						</div>
+					</li>
+					<li>
+						<div>
+							<img src="images/security_logo_03.svg" title="" alt="">
+						</div>
+					</li>
+					<li>
+						<div>
+							<img src="images/security_logo_04.svg" title="" alt="">
+						</div>
+					</li>
+					<li>
+						<div>
+							<img src="images/security_logo_05.svg" title="" alt="">
+						</div>
+					</li>
+					<li>
+						<div>
+							<img src="images/security_logo_06.svg" title="" alt="">
+						</div>
+					</li>
+					<li>
+						<div>
+							<img src="images/security_logo_07.svg" title="" alt="">
+						</div>
+					</li>
+				</ul>
+			</section>
+		</div>
+
+
+		<!-- 聯絡表單 -->
+		<div class="con contactCon" id="securityContact">
+			<section>
+				<h1>預約顧問解說</h1>
+				<div class="contactCon_form">
+						<dl>
+							<dt>姓名 *</dt>
+							<dd>
+								<input type="text" name="">
+							</dd>
+						</dl>
+						<dl>
+							<dt>電話 *</dt>
+							<dd>
+								<input type="tel" name="">
+							</dd>
+						</dl>
+						<dl>
+							<dt>E-mail *</dt>
+							<dd>
+								<input type="text" name="">
+							</dd>
+						</dl>
+						<dl>
+							<dt>公司</dt>
+							<dd>
+								<input type="text" name="">
+							</dd>
+						</dl>
+						<dl>
+							<dt>職稱</dt>
+							<dd>
+								<input type="text" name="">
+							</dd>
+						</dl>
+						<dl>
+							<dt>主旨 *</dt>
+							<dd>
+								<input type="text" name="">
+							</dd>
+						</dl>
+					<div>
+						<dl class="twodl">
+							<dt>內容 *</dt>
+							<dd>
+								<textarea type="text" name="" rows="5"></textarea>
+							</dd>
+						</dl>
+						<div class="formSubmit">
+							<div>* 為必填欄位</div>
+							<div>
+								<a href="" class="orangeBtn">SUBMIT</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</section>
+			<div class="contactCon_bg imgLiquid">
+				<img src="images/contact_bg.png">
+			</div>
+		</div>
+
+	</div>
+
+
+
+
+	<!-- FOOTER -->
+	<footer>
+		<section>
+			<div class="footer_logo">
+				<img src="images/logo_color.png">
+				<p>AWS 雲端專家，竭誠為您服務。</p>
+			</div>
+			<ul class="footer_websiteMap">
+				<li class="footer_websiteMap_box">
+					<ul class="footer_websiteMap_box_01">
+						<li>
+							<a href="">關於我們</a>
+						</li>
+						<li>
+							<a href="">聯絡我們</a>
+						</li>
+						<li>
+							<a href="">合作夥伴</a>
+						</li>
+					</ul>
+				</li>
+				<li class="footer_websiteMap_box">
+					<h5>產品及服務</h5>
+					<ul>
+						<li>
+							<a href="">Atlas</a>
+						</li>
+					</ul>
+				</li>
+				<li class="footer_websiteMap_box">
+					<h5>雲端解決方案</h5>
+					<ul>
+						<li>
+							<a href="">資訊安全</a>
+						</li>
+						<li>
+							<a href="">專線</a>
+						</li>
+						<li>
+							<a href="">備份及災難備援</a>
+						</li>
+						<li>
+							<a href="">物聯網 IoT</a>
+						</li>
+						<li>
+							<a href="">效能優化</a>
+						</li>
+						<li>
+							<a href="">大數據</a>
+						</li>
+					</ul>
+				</li>
+				<li class="footer_websiteMap_box">
+					<h5>部落格</h5>
+					<ul>
+						<li>
+							<a href="">最新消息</a>
+						</li>
+						<li>
+							<a href="">Atlas</a>
+						</li>
+						<li>
+							<a href="">資訊安全</a>
+						</li>
+						<li>
+							<a href="">專線</a>
+						</li>
+						<li>
+							<a href="">備份及災難備援</a>
+						</li>
+						<li>
+							<a href="">物聯網 IoT</a>
+						</li>
+						<li>
+							<a href="">效能優化</a>
+						</li>
+						<li>
+							<a href="">大數據</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</section>
+		<div class="footerDeep">
+			<section>
+				<div class="footerDeep_info">
+					<a href="https://www.ecloudvalley.com/zh-hant/security-terms-and-conditions/" target="_blank">資訊安全政策</a>
+					<a href="">隱私權政策</a>
+				</div>
+				<div class="footerDeep_copy">Copyright 2018 © eCloudvalley Digital Technology Co., Ltd. All Rights Reserved. </div>
+			</section>
+		</div>
+		<div class="gotop">
+			<a href="javascript:;"><img src="images/toTop.svg"></a>
+		</div>
+	</footer>
+</body>
+
+</html>

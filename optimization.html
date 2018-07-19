@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--for ie-->
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE; IE=10; IE=9; IE=8;" />
+<meta charset="UTF-8">
+
+<title>伊雲谷Amazon Web Service雲端專家</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="icon" href="theme/tw/images/favicon.png">
+<meta name="title" content="雲端環境效能優化，節省成本，提高網路效能。">
+<meta name="description" content="監控網站流量、分析使用者行為分析、大量連線測試、壓力測試、高可用性分析，提升網站效能，適用各種雲端環境包含 AWS、Google Cloud Platform(GCP)、Microsoft Azure"/>
+<meta property="og:url" content="">
+<meta property="og:image" content="images/fb_share.png">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+<link rel="shortcut icon" href="">
+
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/css.css">
+<link rel="stylesheet" href="css/rwd.css">
+<link rel="stylesheet" href="js/slick/slick.css">
+<link rel="stylesheet" href="js/slick/slick-theme.css">
+
+<!--css animations-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+<script type="text/javascript" src="js/jquery-3.2.0.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type='text/javascript' src='js/jquery-imgLiquid.min.js'></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+
+<!-- Add fancyBox main JS and CSS files -->
+<script type="text/javascript" src="js/fancybox/jquery.fancybox.js"></script>
+<link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox.css" media="screen"/>
+
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
+
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<link rel="stylesheet" type="text/css" href="js/jquery-ui.css">
+
+
+<!--[if IE]>
+    <script>
+        document.createElement("header");
+        document.createElement("menu");
+        document.createElement("nav");
+        document.createElement("section");
+        document.createElement("article");
+        document.createElement("aside");
+        document.createElement("figure");
+        document.createElement("hgroup");
+        document.createElement("footer");
+        document.createElement("address");
+    </script>
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <script src="../js/html5.js"></script>
+<![endif]-->
+<script>
+	$( function() {
+	  	//slider
+	  	$('.customerCon_slide').slick({
+    		arrows:true,
+    		dots:false,
+    		slidesToShow: 3,
+    		slidesToScroll: 3,
+    		responsive: [{
+                breakpoint: 901,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                }
+            }, {
+                breakpoint: 601,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            }]
+  		});
+
+  		// BANNER 跳轉至下方表單
+  		$('#optimizationScroll').click(function(){
+            var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+            $body.animate({
+                scrollTop: $('#optimizationContact').offset().top
+            }, 1000);
+
+            return false;
+        });
+
+        // MENU 跳轉至下方表單
+  		$('#optimizationMenuScroll').click(function(){
+            var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+            $body.animate({
+                scrollTop: $('#optimizationContact').offset().top
+            }, 1000);
+
+            return false;
+        });
+
+        // 手機版聯絡我們跳轉至下方時，將下拉選單關閉
+        $('.s_menu .orangeMenu').click(function() {
+		if($('.s_menu').hasClass("active")){
+			$('.s_menu').removeClass("active");
+		}else{
+			$('.s_menu').addClass("active");
+		}
+		});
+  	});
+</script>
+
+</head>
+<body class="index">
+	<div class="wrap">
+
+		<!-- 主頁KV -->
+		<div class="banner banner_inner">
+			<header class="header">
+					<section>
+						<a href="index.html" class="haeder_logo">
+						</a>
+				        <div class="haeder_ham">
+				            <a href="javascript:;">
+				            	<i class="fa fa-bars"></i>
+				            </a>
+				        </div>
+					    <nav>
+					    	<!-- 電腦版顯示此 menu --> 
+					     	<ul class="haeder_nav_menu">
+					     		<li class="dropdownLi"><a href="javascript:;" class="dropdown">雲端產品</a>
+					     			<ul class="dropdown_list">
+					     				<li><a href="Atlas.html">Atlas</a></li>
+					     			</ul>
+					     		</li>
+					     		<li class="dropdownLi"><a href="javascript:;" class="dropdown">雲端解決方案</a>
+					     			<ul class="dropdown_list">
+					     				<li><a href="security.html">資訊安全</a></li>
+					     				<li><a href="direct-connect.html">專線</a></li>
+					     				<li><a href="storage-backup.html">備份及災難備援</a></li>
+					     				<li><a href="big-data.html">大數據與物聯網 IoT</a></li>
+					     				<li><a href="optimization.html">效能優化</a></li>
+					     			</ul>
+					     		</li>
+					     		<li><a href="index.html#WhoWeAre" id="WhoWeAreScroll">HWO WE ARE</a></li>
+					     		<li class="dropdownLi"><a href="javascript:;" class="dropdown">部落格</a>
+					     			<ul class="dropdown_list">
+					     				<li><a href="blog.html">全部文章</a></li>
+					     				<li><a href="blog.html">最新消息</a></li>
+					     				<li><a href="blog.html">Atlas</a></li>
+					     				<li><a href="blog.html">資訊安全</a></li>
+					     				<li><a href="blog.html">專線</a></li>
+					     				<li><a href="blog.html">備份及災難備援</a></li>
+					     				<li><a href="blog.html">大數據與物聯網 IoT</a></li>
+					     				<li><a href="blog.html">效能優化</a></li>
+				     				</ul>
+					     		</li>
+					     		<li><a href="#optimizationContact" class="orangeMenu" id="optimizationMenuScroll"><span>聯絡我們</span></a></li>
+					     	</ul>
+
+
+					     	<!-- 手機版顯示此 menu --> 
+					     	<ul class="s_menu">
+					     		<li><a href="javascript:;" class="s_menu_dropdown">雲端產品</a>
+					     			<ul class="s_menu_dropdown_list">
+					     				<li><a href="Atlas.html">Atlas</a></li>
+					     			</ul>
+					     		</li>
+					     		<li><a href="javascript:;" class="s_menu_dropdown">雲端解決方案</a>
+					     			<ul class="s_menu_dropdown_list">
+					     				<li><a href="security.html">資訊安全</a></li>
+					     				<li><a href="direct-connect.html">專線</a></li>
+					     				<li><a href="storage-backup.html">備份及災難備援</a></li>
+					     				<li><a href="big-data.html">大數據與物聯網 IoT</a></li>
+					     				<li><a href="optimization.html">效能優化</a></li>
+					     			</ul>
+					     		</li>
+					     		<li><a href="index.html#WhoWeAre">HWO WE ARE</a></li>
+					     		<li><a href="javascript:;" class="s_menu_dropdown">部落格</a>
+				     				<ul class="s_menu_dropdown_list">
+					     				<li><a href="blog.html">全部文章</a></li>
+					     				<li><a href="blog.html">最新消息</a></li>
+					     				<li><a href="blog.html">Atlas</a></li>
+					     				<li><a href="blog.html">資訊安全</a></li>
+					     				<li><a href="blog.html">專線</a></li>
+					     				<li><a href="blog.html">備份及災難備援</a></li>
+					     				<li><a href="blog.html">大數據與物聯網 IoT</a></li>
+					     				<li><a href="blog.html">效能優化</a></li>
+				     				</ul>
+					     		</li>
+					     		<li><a href="#optimizationContact" class="orangeMenu" id="optimizationMenuScroll"><span>聯絡我們</span></a></li>
+					     	</ul>
+					    </nav>
+					</section>
+				</header>
+			<div class="banner_title banner_servise">
+				<h1>效能優化解決方案</h1>
+				<h2>隨時優化雲端環境，以降低成本、提升效能、改善安全性及容錯能力</h2>
+				<a href="#optimizationContact" class="orangeBtn" id="optimizationScroll">我有興趣</a>	
+			</div>
+			<div class="banner_bg imgLiquid">
+				<img src="images/banner_optimization.png">
+			</div>
+		</div>
+
+		<div class="con conGray conRight conHalf clearfix">
+			<section>
+				<div class="con_list">
+				<h1>高可用性測試</h1>
+						<p>找出整體系統整合面可能存在之程式、架構、設定等問題，進行如壓力測試/效能測試/負載測試/浸泡測試/乘載力測試/穩定性測試等。</p>
+				</div>
+				<div class="conCenterList_imgRight">
+					<img src="images/optimization01.svg">
+				</div>
+			</section>
+		</div>
+
+		<div class="con conLeft conBlue conHalf clearfix">
+			<section>
+				<div class="con_list">
+					<h1>大量連線測試</h1>
+						<p>分析各測試情境腳本之效能數據(回應時間、錯誤率、頻寬、交易筆數) ，測試服務運算資源所能承載連線數量之極限值及最適值，並找出瓶頸議題。</p>
+				</div>
+				<div class="conCenterList_imgLeft">
+					<img src="images/optimization02.svg">
+				</div>
+			</section>
+		</div>
+
+		<div class="con conGray conRight conHalf clearfix">
+			<section>
+				<div class="con_list">
+				<h1>大量運算測試</h1>
+						<p>模擬真實情境，測試服務運算資源所能承載量之極限值及建議值分析各系統程式之效能數據，找出瓶頸議題。</p>
+				</div>
+				<div class="conCenterList_imgRight">
+					<img src="images/optimization03.svg">
+				</div>
+			</section>
+		</div>
+
+		<div class="con conLeft conBlue conHalf clearfix">
+			<section>
+				<div class="con_list">
+					<h1>資源彈性調度測試</h1>
+						<p>確認其架構是否具有彈性資源調度功能，當量大時是否增長資源，量小縮減資源。</p>
+				</div>
+				<div class="conCenterList_imgLeft">
+					<img src="images/optimization04.svg">
+				</div>
+			</section>
+		</div>
+
+		<div class="con conGray conRight conHalf clearfix">
+			<section>
+				<div class="con_list">
+					<h1>基礎架構監控管理</h1>
+					<p>提供 IT 維運管理與效能監控工具讓企業監控與管理雲端資源，設定自動化應變程序，提供儀表板監控管理介面與完善的結果報告，協助管理人員進行監測基礎設施和應用。</p>
+				</div>
+				<div class="conCenterList_imgRight">
+					<img src="images/optimization05.svg">
+				</div>
+			</section>
+		</div>
+
+		<div class="con conLeft conBlue conHalf clearfix">
+			<section>
+				<div class="con_list">
+					<h1>監控網站流量</h1>
+						<p>監控網站流量並做即時分析，確保網站在高峰時段正常運作並檢視基礎設施是否出現問題，發生問題時協助加速找到問題點並獲取通知。同時也可針對用量預測網路使用率、存儲消耗和雲使用等關鍵成本，方便成本管控。</p>
+				</div>
+				<div class="conCenterList_imgLeft">
+					<img src="images/optimization06.svg">
+				</div>
+			</section>
+		</div>
+
+		<div class="con conGray conRight conHalf clearfix">
+			<section>
+				<div class="con_list">
+					<h1>使用者行為分析</h1>
+					<p>從使用者角度採集使用者行為數據，完整的追蹤和捕捉記錄量化網頁背後的數據商業邏輯，取代傳統的Log紀錄作法，可減輕原系統的負擔及更改原始程式碼的風險，從使用者行為洞察商業先機。</p>
+				</div>
+				<div class="conCenterList_imgRight">
+					<img src="images/optimization07.svg">
+				</div>
+			</section>
+		</div>
+		
+		<!-- 合作夥伴 -->
+		<div class="con customerCon">
+			<section>
+				<h1>合作夥伴</h1>
+				<ul class="customerCon_slide">
+					<li>
+						<div>
+							<img src="images/optimization_logo_01.svg" title="" alt="">
+						</div>
+					</li>
+					<li>
+						<div>
+							<img src="images/optimization_logo_02.svg" title="" alt="">
+						</div>
+					</li>
+					<li>
+						<div>
+							<img src="images/optimization_logo_03.svg" title="" alt="">
+						</div>
+					</li>
+				</ul>
+			</section>
+		</div>
+
+
+		<!-- 聯絡表單 -->
+		<div class="con contactCon" id="optimizationContact">
+			<section>
+				<h1>預約顧問解說</h1>
+				<div class="contactCon_form">
+						<dl>
+							<dt>姓名 *</dt>
+							<dd>
+								<input type="text" name="">
+							</dd>
+						</dl>
+						<dl>
+							<dt>電話 *</dt>
+							<dd>
+								<input type="tel" name="">
+							</dd>
+						</dl>
+						<dl>
+							<dt>E-mail *</dt>
+							<dd>
+								<input type="text" name="">
+							</dd>
+						</dl>
+						<dl>
+							<dt>公司</dt>
+							<dd>
+								<input type="text" name="">
+							</dd>
+						</dl>
+						<dl>
+							<dt>職稱</dt>
+							<dd>
+								<input type="text" name="">
+							</dd>
+						</dl>
+						<dl>
+							<dt>主旨 *</dt>
+							<dd>
+								<input type="text" name="">
+							</dd>
+						</dl>
+					<div>
+						<dl class="twodl">
+							<dt>內容 *</dt>
+							<dd>
+								<textarea type="text" name="" rows="5"></textarea>
+							</dd>
+						</dl>
+						<div class="formSubmit">
+							<div>* 為必填欄位</div>
+							<div>
+								<a href="" class="orangeBtn">SUBMIT</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</section>
+			<div class="contactCon_bg imgLiquid">
+				<img src="images/contact_bg.png">
+			</div>
+		</div>
+
+	</div>
+
+
+
+
+	<!-- FOOTER -->
+	<footer>
+		<section>
+			<div class="footer_logo">
+				<img src="images/logo_color.png">
+				<p>AWS 雲端專家，竭誠為您服務。</p>
+			</div>
+			<ul class="footer_websiteMap">
+				<li class="footer_websiteMap_box">
+					<ul class="footer_websiteMap_box_01">
+						<li>
+							<a href="">關於我們</a>
+						</li>
+						<li>
+							<a href="">聯絡我們</a>
+						</li>
+						<li>
+							<a href="">合作夥伴</a>
+						</li>
+					</ul>
+				</li>
+				<li class="footer_websiteMap_box">
+					<h5>產品及服務</h5>
+					<ul>
+						<li>
+							<a href="">Atlas</a>
+						</li>
+					</ul>
+				</li>
+				<li class="footer_websiteMap_box">
+					<h5>雲端解決方案</h5>
+					<ul>
+						<li>
+							<a href="">資訊安全</a>
+						</li>
+						<li>
+							<a href="">專線</a>
+						</li>
+						<li>
+							<a href="">備份及災難備援</a>
+						</li>
+						<li>
+							<a href="">物聯網 IoT</a>
+						</li>
+						<li>
+							<a href="">效能優化</a>
+						</li>
+						<li>
+							<a href="">大數據</a>
+						</li>
+					</ul>
+				</li>
+				<li class="footer_websiteMap_box">
+					<h5>部落格</h5>
+					<ul>
+						<li>
+							<a href="">最新消息</a>
+						</li>
+						<li>
+							<a href="">Atlas</a>
+						</li>
+						<li>
+							<a href="">資訊安全</a>
+						</li>
+						<li>
+							<a href="">專線</a>
+						</li>
+						<li>
+							<a href="">備份及災難備援</a>
+						</li>
+						<li>
+							<a href="">物聯網 IoT</a>
+						</li>
+						<li>
+							<a href="">效能優化</a>
+						</li>
+						<li>
+							<a href="">大數據</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</section>
+		<div class="footerDeep">
+			<section>
+				<div class="footerDeep_info">
+					<a href="https://www.ecloudvalley.com/zh-hant/security-terms-and-conditions/" target="_blank">資訊安全政策</a>
+					<a href="">隱私權政策</a>
+				</div>
+				<div class="footerDeep_copy">Copyright 2018 © eCloudvalley Digital Technology Co., Ltd. All Rights Reserved. </div>
+			</section>
+		</div>
+		<div class="gotop">
+			<a href="javascript:;"><img src="images/toTop.svg"></a>
+		</div>
+	</footer>
+</body>
+
+</html>
