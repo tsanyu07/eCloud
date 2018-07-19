@@ -245,6 +245,9 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     left:0;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
 }
 
 .customerCon_slide .slick-next:before{
@@ -258,6 +261,9 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     right:0;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
 }
 
 .mainArticle_recommend .slick-dots{
