@@ -23,7 +23,6 @@
 <link rel="stylesheet" href="js/slick/slick.css">
 <link rel="stylesheet" href="js/slick/slick-theme.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous"> -->
 
 <!--css animations-->
 <script type="text/javascript" src="js/jquery-3.2.0.js"></script>
@@ -88,6 +87,16 @@
             var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
             $body.animate({
                 scrollTop: $('#WhoWeAre').offset().top
+            }, 1000);
+
+            return false;
+        });
+
+        // MSP 按鈕 跳轉至關於我們
+  		$('#MSPScroll').click(function(){
+            var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+            $body.animate({
+                scrollTop: $('#contact').offset().top
             }, 1000);
 
             return false;
@@ -315,7 +324,7 @@
 				<div class="atlasCon_txt">
 					<h1>MSP 新世紀雲端託管服務</h1>
 					<p>MSP 團隊擁有多張雲端專業證照，總是站在客戶立場協助雲端最佳化佈署，有效提升雲端效能、雲端安全、維持高可用性並控管成本，讓客戶無後顧之憂。</p>
-					<a href="" class="orangeBtn">MORE</a>
+					<a href="#contact" class="orangeBtn" id="MSPScroll">諮詢 MSP 顧問</a>
 				</div>
 			</section>
 		</div>
