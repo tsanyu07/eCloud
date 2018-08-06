@@ -1241,14 +1241,14 @@ nav .dropdown_list li a:hover{
 
 .conPricing_infoBox_02:after{
 	position: absolute;
-	content: url(../images/pricing01.svg);
+	content: url(../images/pricing01.png);
 	top:-50px;
 	right: 10px;
 }
 
 .conPricing_infoBox_03:after{
 	position: absolute;
-	content: url(../images/pricing02.svg);
+	content: url(../images/pricing02.png);
 	top:-50px;
 	right: 10px;
 }
