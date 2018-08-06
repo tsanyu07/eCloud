@@ -1013,6 +1013,11 @@ nav .dropdown_list li a:hover{
 	margin-top: 20px;
 }
 
+.conGray h1 .gray,.conBlue h1 .gray,.con h1 .gray{
+ 	color:#666666;
+ 	margin-bottom: 20px;
+ }
+
 .conCenterList .conCenterList_imgRight{
 	margin-top: 20px;
 }
@@ -1073,6 +1078,42 @@ nav .dropdown_list li a:hover{
 	line-height: 1.6;
 }
 
+
+.mainFea_features{
+	font-size: 0;
+}
+
+.mainFea_features li{
+	display: inline-block;
+	font-size: 16px;
+	width: 33.3%;
+	vertical-align:top;
+	padding:0 20px;
+}
+
+.mainFea_features_txt h2{
+	font-size: 1.25em;
+	margin-bottom: 5px;
+	margin-top: 10px;
+	color:#FF8B00;
+}
+
+.mainFea_features_txt p{
+	text-align: left;
+	line-height: 1.6;
+	font-size: 0.9315em;
+}
+
+.mainFea_features_txt p small{
+	font-size: 12px;
+	color:#848484;
+}
+
+.mainFea{
+	background: url(../images/bb_bg.png)center center no-repeat;
+	background-size: cover;
+}
+
 .customerCon{
 	padding:50px 0;
 	background: #FFF; 
@@ -1113,6 +1154,108 @@ nav .dropdown_list li a:hover{
 .customerCon .slick-slide img{
 	min-height: 115px;
 }
+
+.conPricing_infoBox{
+	padding-top: 40px;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-webkit-justify-content:space-between;
+	-ms-justify-content:space-between;
+	justify-content:space-between;
+}
+
+
+.conPricing_infoBox li{
+	width: 31%;
+	font-size: 0;
+	box-shadow:0px 0px 10px rgba(107, 107, 107, 0.2); 
+	text-align: center;
+	display: inline-block;
+}
+
+.conPricing_infoBox_title h2{
+	font-size:24px;
+	padding: 38px 20px;
+	background:#14A1F0; 
+	color:#FFF;
+	letter-spacing:1px;
+	text-shadow:0px 0px 10px rgba(107, 107, 107, 0.2);
+}
+
+.conPricing_infoBox_cata{
+	font-size:14px;
+	background: #FFF;
+	color:#B3B3B3;
+}
+
+.conPricing_infoBox_cata ul{
+	padding: 15px 60px;
+}
+
+.conPricing_infoBox_cata p{
+	padding: 25px 30px;
+	color:#F99500;
+	font-size: 16px;
+	line-height: 1.2;
+
+}
+
+.conPricing_infoBox_cata p span{
+	font-size: 20px;
+	margin-right: 5px;
+}
+
+.conPricing_infoBox_cata p strong{
+	font-size: 34px;
+}
+
+.conPricing_infoBox_cata li{
+	font-size:14px;
+	color:#B3B3B3;
+	display: block;
+	width: 100%;
+	box-shadow: none;
+	padding: 2px 0;
+	text-align: left;
+}
+
+.conPricing_infoBox_cata li.true{
+	color:#349CD6;
+}
+
+.conPricing_infoBox_cata li.true i{
+	color:#F7941D;
+}
+
+.conPricing_infoBox_cata h4{
+	font-size:16px;
+	padding: 12px 0;
+	background: #98DDFF;
+	color:#0074B5;
+}
+
+.conPricing_infoBox_02,.conPricing_infoBox_03{
+	position: relative;
+}
+
+.conPricing_infoBox_02:after{
+	position: absolute;
+	content: url(../images/pricing01.svg);
+	top:-50px;
+	right: 10px;
+}
+
+.conPricing_infoBox_03:after{
+	position: absolute;
+	content: url(../images/pricing02.svg);
+	top:-50px;
+	right: 10px;
+}
+
+  .conPricing_mb{
+    display: none;
+  }
 
 
 

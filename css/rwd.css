@@ -372,6 +372,14 @@
     text-align: center;
   }
 
+  .conPricing_infoBox_cata ul{
+  padding: 15px 30px;
+  }
+
+  .conPricing_infoBox_02:after,.conPricing_infoBox_03:after{
+  right: -10px;
+  }
+
 }
 
 
@@ -404,9 +412,66 @@
     text-align: center;
   }
 
+  .mainFea_features li{
+    width: 50%;
+  }
+
 }
 
 @media(max-width:700px){
+  .conPricing_mb{
+    display: block;
+  }
+
+  .conPricing_mb > li{
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .conPricing_mbHide{
+    display: none;
+  }
+
+  .conPricing_mbHide.active{
+    display:block; 
+  }
+
+  .conPricing_click .conPricing_infoBox_title h2{
+    position: relative;
+  }
+
+  .conPricing_click .conPricing_infoBox_title h2:after{
+    position: absolute;
+    content:'\f107';
+    right: 30%;
+    top:50%;
+    margin-top: -18px;
+    font-size: 32px;
+  }
+
+  .conPricing_click.active .conPricing_infoBox_title h2:after{
+    position: absolute;
+    content:'\f106';
+    right: 30%;
+    top:50%;
+    margin-top: -18px;
+    font-size: 32px;
+  }
+
+  .conPricing_infoBox_02:after, .conPricing_infoBox_03:after{
+    top: -25px;
+    right: -15px;
+  }
+
+  .conPricing_infoBox_cata ul{
+    display: inline-block;
+  }
+
+  .conPricing_pc{
+    display: none;
+  }
+
   .banner_title h1{
     font-size: 2em;
   }
@@ -531,9 +596,23 @@
     margin-right: -12px;
   }
 
+  .mainFea_features li{
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 0 15px;
+  }
+
 }
 
 @media(max-width:360px){
+
+  .conPricing_click .conPricing_infoBox_title h2:after,.conPricing_click.active .conPricing_infoBox_title h2:after{
+    right: 27%;
+  }
+
+  .atlas_banner_inner{
+    padding-top: 400px;
+  }
 
 }
 

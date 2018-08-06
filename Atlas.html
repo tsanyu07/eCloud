@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--for ie-->
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE; IE=10; IE=9; IE=8;" />
+<meta charset="UTF-8">
+
+<title>伊雲谷Amazon Web Service雲端專家</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="icon" href="theme/tw/images/favicon.png">
+<meta name="title" content="資訊安全健檢與產品，阻擋惡意攻擊提升網站安全防護">
+<meta name="description" content="完整網路安全技術產品，提供進階威脅防護。Deep Security 趨勢科技防護方案、弱點掃描、原始碼檢測、數位加解密去識別化、WAF 應用程式防火牆、DDOS 流量清洗。"/>
+<meta property="og:url" content="">
+<meta property="og:image" content="images/fb_share.png">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+<link rel="shortcut icon" href="">
+
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/css.css">
+<link rel="stylesheet" href="css/rwd.css">
+<link rel="stylesheet" href="js/slick/slick.css">
+<link rel="stylesheet" href="js/slick/slick-theme.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<!--css animations-->
+<script type="text/javascript" src="js/jquery-3.2.0.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type='text/javascript' src='js/jquery-imgLiquid.min.js'></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+
+<!-- Add fancyBox main JS and CSS files -->
+<script type="text/javascript" src="js/fancybox/jquery.fancybox.js"></script>
+<link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox.css" media="screen"/>
+
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<link rel="stylesheet" type="text/css" href="js/jquery-ui.css">
+
+
+<!--[if IE]>
+    <script>
+        document.createElement("header");
+        document.createElement("menu");
+        document.createElement("nav");
+        document.createElement("section");
+        document.createElement("article");
+        document.createElement("aside");
+        document.createElement("figure");
+        document.createElement("hgroup");
+        document.createElement("footer");
+        document.createElement("address");
+    </script>
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <script src="../js/html5.js"></script>
+<![endif]-->
+<script>
+	$( function() {
+	  	//  手機版 價格方案開闔
+		$('.conPricing_click').click(function(){
+			if($(this).hasClass("active")){
+				$(this).removeClass("active");
+				$(this).parent("li").children('.conPricing_mbHide').removeClass("active");
+			}else{
+				$(this).addClass("active");
+				$(this).parent("li").children('.conPricing_mbHide').addClass("active");
+			}
+		});
+
+  		// BANNER 跳轉至下方表單
+  		$('#securityScroll').click(function(){
+            var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+            $body.animate({
+                scrollTop: $('#securityContact').offset().top
+            }, 1000);
+
+            return false;
+        });
+
+        // MENU 跳轉至下方表單
+  		$('#securityMenuScroll').click(function(){
+            var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+            $body.animate({
+                scrollTop: $('#securityContact').offset().top
+            }, 1000);
+
+            return false;
+        });
+
+  		// 手機版聯絡我們跳轉至下方時，將下拉選單關閉
+        $('.s_menu .orangeMenu').click(function() {
+		if($('.s_menu').hasClass("active")){
+			$('.s_menu').removeClass("active");
+		}else{
+			$('.s_menu').addClass("active");
+		}
+		});
+  	});
+</script>
+
+</head>
+<body class="index">
+	<div class="wrap">
+
+		<!-- 主頁KV -->
+		<div class="banner banner_inner atlas_banner_inner">
+			<header class="header">
+					<section>
+						<a href="index.html" class="haeder_logo">
+						</a>
+				        <div class="haeder_ham">
+				            <a href="javascript:;">
+				            	<i class="fa fa-bars"></i>
+				            </a>
+				        </div>
+					    <nav>
+					    	<!-- 電腦版顯示此 menu --> 
+					     	<ul class="haeder_nav_menu">
+					     		<li class="dropdownLi"><a href="javascript:;" class="dropdown">雲端產品</a>
+					     			<ul class="dropdown_list">
+					     				<li><a href="Atlas.html">Atlas</a></li>
+					     			</ul>
+					     		</li>
+					     		<li class="dropdownLi"><a href="javascript:;" class="dropdown">雲端解決方案</a>
+					     			<ul class="dropdown_list">
+					     				<li><a href="security.html">資訊安全</a></li>
+					     				<li><a href="direct-connect.html">專線</a></li>
+					     				<li><a href="storage-backup.html">備份及災難備援</a></li>
+					     				<li><a href="big-data.html">大數據與物聯網 IoT</a></li>
+					     				<li><a href="optimization.html">效能優化</a></li>
+					     			</ul>
+					     		</li>
+					     		<li><a href="index.html#WhoWeAre" id="WhoWeAreScroll">WHO WE ARE</a></li>
+					     		<li class="dropdownLi"><a href="javascript:;" class="dropdown">部落格</a>
+					     			<ul class="dropdown_list">
+					     				<li><a href="blog.html">全部文章</a></li>
+					     				<li><a href="blog.html">最新消息</a></li>
+					     				<li><a href="blog.html">Atlas</a></li>
+					     				<li><a href="blog.html">資訊安全</a></li>
+					     				<li><a href="blog.html">專線</a></li>
+					     				<li><a href="blog.html">備份及災難備援</a></li>
+					     				<li><a href="blog.html">大數據與物聯網 IoT</a></li>
+					     				<li><a href="blog.html">效能優化</a></li>
+				     				</ul>
+					     		</li>
+					     		<li><a href="#securityContact" class="orangeMenu" id="securityMenuScroll"><span>聯絡我們</span></a></li>
+					     	</ul>
+
+
+					     	<!-- 手機版顯示此 menu --> 
+					     	<ul class="s_menu">
+					     		<li><a href="javascript:;" class="s_menu_dropdown">雲端產品</a>
+					     			<ul class="s_menu_dropdown_list">
+					     				<li><a href="Atlas.html">Atlas</a></li>
+					     			</ul>
+					     		</li>
+					     		<li><a href="javascript:;" class="s_menu_dropdown">雲端解決方案</a>
+					     			<ul class="s_menu_dropdown_list">
+					     				<li><a href="security.html">資訊安全</a></li>
+					     				<li><a href="direct-connect.html">專線</a></li>
+					     				<li><a href="storage-backup.html">備份及災難備援</a></li>
+					     				<li><a href="big-data.html">大數據與物聯網 IoT</a></li>
+					     				<li><a href="optimization.html">效能優化</a></li>
+					     			</ul>
+					     		</li>
+					     		<li><a href="index.html#WhoWeAre">WHO WE ARE</a></li>
+					     		<li><a href="javascript:;" class="s_menu_dropdown">部落格</a>
+				     				<ul class="s_menu_dropdown_list">
+					     				<li><a href="blog.html">全部文章</a></li>
+					     				<li><a href="blog.html">最新消息</a></li>
+					     				<li><a href="blog.html">Atlas</a></li>
+					     				<li><a href="blog.html">資訊安全</a></li>
+					     				<li><a href="blog.html">專線</a></li>
+					     				<li><a href="blog.html">備份及災難備援</a></li>
+					     				<li><a href="blog.html">大數據與物聯網 IoT</a></li>
+					     				<li><a href="blog.html">效能優化</a></li>
+				     				</ul>
+					     		</li>
+					     		<li><a href="#securityContact" class="orangeMenu" id="securityMenuScroll"><span>聯絡我們</span></a></li>
+					     	</ul>
+					    </nav>
+					</section>
+				</header>
+			<div class="banner_title banner_servise">
+				<h1>Atlas 新世紀雲端管理平台</h1>
+				<h2>利用Atlas雲端管理平台跨雲管理負載、控管成本，化繁為簡讓使用者輕鬆駕馭雲環境</h2>
+				<a href="#securityContact" class="orangeBtn" id="securityScroll">我有興趣</a>	
+			</div>
+			<div class="banner_bg imgLiquid">
+				<img src="images/banner_atlas.png">
+			</div>
+		</div>
+
+		<div class="con conGray conRight conHalf clearfix">
+			<section>
+				<h1><span class="gray">不可或缺的 Atlas 雲端管理助手</span></h1>
+				<div class="con_list">
+					<h1>IT 日常營運維護</h1>
+					<p>IT 管理人員登入 Atlas 雲端管理平台後即可實時查看系統負載狀況。自動化服務開關機排程、用量警示、各項分析報表與優化建議讓企業內部 IT 人員省時、節省預算並及時調整企業最適合的雲環境。</p>	
+				</div>
+				<div class="conCenterList_imgRight">
+					<img src="images/atlas01.svg">
+				</div>
+			</section>
+		</div>
+
+		<div class="con conLeft conBlue conHalf clearfix">
+			<section>
+				<div class="con_list">
+					<h1>服務監控</h1>
+					<p>管理和監控各帳戶內雲端計算服務，包含存儲、內存、CPU 資源容量等，以幫助企業雲端環境部署、工作負載並滿足性能要求，讓雲端管理人員有更多時間專心投入研發，為企業創造更大利益。</p>
+				</div>
+				<div class="conCenterList_imgLeft">
+					<img src="images/atlas02.svg">
+				</div>
+			</section>
+		</div>
+
+		<div class="con conGray conRight conHalf clearfix">
+			<section>
+				<div class="con_list">
+					<h1>財務管理</h1>
+					<p>登入 Atlas 雲端管理平台即可隨時掌握各服務花費、總體支出，還可直接下載當月詳細帳單、商業發票，並查詢過去帳單歷史紀錄、分析花費趨勢，方便財務人員製作財務報表，規劃未來財務預算編製。</p>
+				</div>
+				<div class="conCenterList_imgRight">
+					<img src="images/atlas03.svg">
+				</div>
+			</section>
+		</div>
+
+		<div class="con conLeft conBlue conHalf clearfix">
+			<section>
+				<div class="con_list">
+					<h1>最佳實踐方法</h1>
+					<p>Atlas 雲端管理平台利用人工智慧演算法在費用報告、用量報告、可用性報告中，建議最佳優化方式包含升級最新型號機器、關閉不需要的執行個體以節省成本、安全漏洞檢測與建議，讓 IT 管理人員輕鬆優化佈署。</p>
+				</div>
+				<div class="conCenterList_imgLeft">
+					<img src="images/atlas04.svg">
+				</div>
+			</section>
+		</div>
+
+
+		<!-- 核心功能 -->
+		<div class="con mainFea">
+			<section>
+				<h1><span class="gray">核心功能</span></h1>
+				<ul class="mainFea_features">
+					<li>
+						<div class="mainFea_features_img">
+							<img src="images/atlas_icon01-1.svg">
+						</div>
+						<div class="mainFea_features_txt">
+							<h2>帳單管理</h2>
+							<p>登入後即可視覺化檢視每個機器與各項重要服務花費，並可往回追溯歷年帳單，方便財務管控，IT 人員也可輕鬆監測是否有異常使用</p>
+						</div>
+					</li>
+					<li>
+						<div class="mainFea_features_img">
+							<img src="images/atlas_icon01-2.svg">
+						</div>
+						<div class="mainFea_features_txt">
+							<h2>自動化管理</h2>
+							<p>自動化排程 EC2 開關機、RDS 開關機、EC2 快照、RDS 快照並留有執行紀錄查驗執行結果，控制風險</p>
+						</div>
+					</li>
+					<li>
+						<div class="mainFea_features_img">
+							<img src="images/atlas_icon01-3.svg">
+						</div>
+						<div class="mainFea_features_txt">
+							<h2>雲端資源調度管理</h2>
+							<p>將資源與工作負載進行優化。正確的將負載大的服務放置大規格機器或調整其他機器配置，清理出閒置的機器將其關閉以節省成本</p>
+						</div>
+					</li>
+					<li>
+						<div class="mainFea_features_img">
+							<img src="images/atlas_icon01-4.svg">
+						</div>
+						<div class="mainFea_features_txt">
+							<h2>報表分析</h2>
+							<p>一鍵產出完整的報表分析包含執行個體報告、備份紀錄報告、安全報告、事件報告、存儲報告、可用性報告、RI 利用率報告</p>
+						</div>
+					</li>
+					<li>
+						<div class="mainFea_features_img">
+							<img src="images/atlas_icon01-5.svg">
+						</div>
+						<div class="mainFea_features_txt">
+							<h2>跨雲管理</h2>
+							<p>混合雲環境是未來企業雲端趨勢。Atlas 同時支持微軟雲端 Microsoft Azure 帳單管理、用量管理的跨雲服務</p>
+						</div>
+					</li>
+					<li>
+						<div class="mainFea_features_img">
+							<img src="images/atlas_icon01-6.svg">
+						</div>
+						<div class="mainFea_features_txt">
+							<h2>獨家 5x8 或 7x24 技術支援服務</h2>
+							<p>全台獨有 AWS 證照之雲端技術工程師待命支援，讓企業客戶用最小的成本即可擁有最專業顧問技術靠山<small>(最快 15 分鐘內回覆，視方案而定)</small></p>
+						</div>
+					</li>
+				</ul>
+			</section>
+		</div>
+
+
+		<!-- 特色功能 -->
+		<div class="con conBlue">
+			<section>
+				<h1><span class="gray">特色功能</span></h1>
+				<ul class="conBlue_features">
+					<li>
+						<div class="conBlue_features_img">
+							<img src="images/atlas_icon02-1.svg">
+						</div>
+						<div class="conBlue_features_txt">
+							<h2>視覺化儀表板</h2>
+							<p>直觀呈現各服務使用價格與總體帳單</p>
+						</div>
+					</li>
+					<li>
+						<div class="conBlue_features_img">
+							<img src="images/atlas_icon02-2.svg">
+						</div>
+						<div class="conBlue_features_txt">
+							<h2>帳單示警通知</h2>
+							<p>協助授權機構評估、監測和稽核資料庫</p>
+						</div>
+					</li>
+					<li>
+						<div class="conBlue_features_img">
+							<img src="images/atlas_icon02-3.svg">
+						</div>
+						<div class="conBlue_features_txt">
+							<h2>Cost Explorer</h2>
+							<p>透過建立圖表及表格式的視覺化報告，分析總成本和用量</p>
+						</div>
+					</li>
+					<li>
+						<div class="conBlue_features_img">
+							<img src="images/atlas_icon02-4.svg">
+						</div>
+						<div class="conBlue_features_txt">
+							<h2>帳單下載</h2>
+							<p>針對第一線網頁應用層設計的惡意防護阻擋防火牆</p>
+						</div>
+					</li>
+					<li>
+						<div class="conBlue_features_img">
+							<img src="images/atlas_icon02-5.svg">
+						</div>
+						<div class="conBlue_features_txt">
+							<h2>RI 建議與續約提醒</h2>
+							<p>建議 RI 最合適方案，年繳期限到時會自動提醒</p>
+						</div>
+					</li>
+					<li>
+						<div class="conBlue_features_img">
+							<img src="images/atlas_icon02-6.svg">
+						</div>
+						<div class="conBlue_features_txt">
+							<h2>合作夥伴設定</h2>
+							<p>客製合作夥伴資料與 LOGO 登入介面</p>
+						</div>
+					</li>
+					<li>
+						<div class="conBlue_features_img">
+							<img src="images/atlas_icon02-7.svg">
+						</div>
+						<div class="conBlue_features_txt">
+							<h2>自動分帳設定</h2>
+							<p>輕鬆解決各帳戶帳單細項與總額，讓企業內部財務人員沒負擔</p>
+						</div>
+					</li>
+					<li>
+						<div class="conBlue_features_img">
+							<img src="images/atlas_icon02-8.svg">
+						</div>
+						<div class="conBlue_features_txt">
+							<h2>容量推薦</h2>
+							<p>自動推薦大小適中的計算容量個體以節省成本</p>
+						</div>
+					</li>
+				</ul>
+			</section>
+		</div>
+
+
+
+		<div class="con conPricing">
+			<section>
+				<h1><span class="gray">收費方案</span></h1>
+				<ul class="conPricing_infoBox conPricing_pc">
+
+					<!-- 基礎級 -->
+					<li>
+						<div class="conPricing_infoBox_title">
+							<h2>基礎級</h2>
+						</div>
+						<div class="conPricing_infoBox_cata">
+							<h4>收費方式</h4>
+							<p>當月帳單金額<br><span><strong>0.8</strong>%</span>服務費</p>
+						</div>
+						<div class="conPricing_infoBox_cata">
+							<h4>帳單管理</h4>
+							<ul>
+								<li class=""><i class="fa fa-check-circle"></i>&nbsp;使用者權限管理</li>
+								<li class="true"><i class="fa fa-check-circle"></i>&nbsp;帳單報表</li>
+								<li class="true"><i class="fa fa-check-circle"></i>&nbsp;帳單示警</li>
+								<li class="true"><i class="fa fa-check-circle"></i>&nbsp;成本剖析</li>
+								<li class=""><i class="fa fa-check-circle"></i>&nbsp;成本預測</li>
+							</ul>
+						</div>
+						<div class="conPricing_infoBox_cata">
+							<h4>自動化管理與最佳實踐建議</h4>
+							<ul>
+								<li class="true"><i class="fa fa-check-circle"></i>&nbsp;EC2/RDS 備份排程</li>
+								<li class="true"><i class="fa fa-check-circle"></i>&nbsp;EC2/RDS 開關機排程</li>
+								<li class=""><i class="fa fa-check-circle"></i>&nbsp;EC2/RDS 自動備份</li>
+								<li class=""><i class="fa fa-check-circle"></i>&nbsp;備份報告</li>
+								<li class=""><i class="fa fa-check-circle"></i>&nbsp;效能報告</li>
+								<li class=""><i class="fa fa-check-circle"></i>&nbsp;AWS 使用資產報告</li>
+								<li class=""><i class="fa fa-check-circle"></i>&nbsp;可用性報告</li>
+								<li class=""><i class="fa fa-check-circle"></i>&nbsp;資訊安全報告</li>
+							</ul>
+						</div>
+						<div class="conPricing_infoBox_cata">
+							<h4>成本控管</h4>
+							<ul>
+								<li class=""><i class="fa fa-check-circle"></i>&nbsp;服務用量報告</li>
+								<li class=""><i class="fa fa-check-circle"></i>&nbsp;EC2/RDS 低使用率報告</li>
+								<li class=""><i class="fa fa-check-circle"></i>&nbsp;最適規格推薦</li>
+								<li class=""><i class="fa fa-check-circle"></i>&nbsp;RI 使用率與涵蓋範圍報告</li>
+								<li class=""><i class="fa fa-check-circle"></i>&nbsp;RI 最佳建議</li>
+							</ul>
+						</div>
+						<div class="conPricing_infoBox_cata">
+							<h4>服務監控</h4>
+							<ul>
+								<li class=""><i class="fa fa-check-circle"></i>&nbsp;人工智慧服務監控</li>
+								<li class=""><i class="fa fa-check-circle"></i>&nbsp;應用管理監控</li>
+							</ul>
+						</div>
+						<div class="conPricing_infoBox_cata">
+							<h4>跨雲管理</h4>
+							<ul>
+								<li class=""><i class="fa fa-check-circle"></i>&nbsp;微軟 Azure 帳單管理</li>
+								<li class=""><i class="fa fa-check-circle"></i>&nbsp;微軟 Azure 用量報告</li>
+							</ul>
+						</div>
+					</li>
+
+
+					<!-- 企業級 -->
+					<li>
+						<div class="conPricing_infoBox_title conPricing_infoBox_02">
+							<h2>企業級</h2>
+						</div>
+						<div class="conPricing_infoBox_cata">
+							<h4>收費方式</h4>
+							<p>當月帳單金額<br><span><strong>1.5</strong>%</span>服務費</p>
+						</div>
+						<div class="conPricing_infoBox_cata">
+							<h4>帳單管理</h4>
+							<ul>
+								<li class=""><i class="fa fa-check-circle"></i>&nbsp;使用者權限管理</li>
+								<li class="true"><i class="fa fa-check-circle"></i>&nbsp;帳單報表</li>
+								<li class="true"><i class="fa fa-check-circle"></i>&nbsp;帳單示警</li>
+								<li class="true"><i class="fa fa-check-circle"></i>&nbsp;成本剖析</li>
+								<li class="true"><i class="fa fa-check-circle"></i>&nbsp;成本預測</li>
+							</ul>
+						</div>
+						<div class="conPricing_infoBox_cata">
+							<h4>自動化管理與最佳實踐建議</h4>
+							<ul>
+								<li class="true"><i class="fa fa-check-circle"></i>&nbsp;EC2/RDS 備份排程</li>
+								<li class="true"><i class="fa fa-check-circle"></i>&nbsp;EC2/RDS 開關機排程</li>
+								<li class=""><i class="fa fa-check-circle"></i>&nbsp;EC2/RDS 自動備份</li>
+								<li class=""><i class="fa fa-check-circle"></i>&nbsp;備份報告</li>
+								<li class="true"><i class="fa fa-check-circle"></i>&nbsp;效能報告</li>
+								<li class="true"><i class="fa fa-check-circle"></i>&nbsp;AWS 使用資產報告</li>
+								<li class=""><i class="fa fa-check-circle"></i>&nbsp;可用性報告</li>
+								<li class=""><i class="fa fa-check-circle"></i>&nbsp;資訊安全報告</li>
+							</ul>
+						</div>
+						<div class="conPricing_infoBox_cata">
+							<h4>成本控管</h4>
+							<ul>
+								<li class="true"><i class="fa fa-check-circle"></i>&nbsp;服務用量報告</li>
+								<li class="true"><i class="fa fa-check-circle"></i>&nbsp;EC2/RDS 低使用率報告</li>
+								<li class="true"><i class="fa fa-check-circle"></i>&nbsp;最適規格推薦</li>
+								<li class=""><i class="fa fa-check-circle"></i>&nbsp;RI 使用率與涵蓋範圍報告</li>
+								<li class=""><i class="fa fa-check-circle"></i>&nbsp;RI 最佳建議</li>
+							</ul>
+						</div>
+						<div class="conPricing_infoBox_cata">
+							<h4>服務監控</h4>
+							<ul>
+								<li class="true"><i class="fa fa-check-circle"></i>&nbsp;人工智慧服務監控</li>
+								<li class=""><i class="fa fa-check-circle"></i>&nbsp;應用管理監控</li>
+							</ul>
+						</div>
+						<div class="conPricing_infoBox_cata">
+							<h4>跨雲管理</h4>
+							<ul>
+								<li class="true"><i class="fa fa-check-circle"></i>&nbsp;微軟 Azure 帳單管理</li>
+								<li class=""><i class="fa fa-check-circle"></i>&nbsp;微軟 Azure 用量報告</li>
+							</ul>
+						</div>
+					</li>
+
+
+					<!-- 旗艦級 -->
+					<li>
+						<div class="conPricing_infoBox_title conPricing_infoBox_03">
+							<h2>旗艦級</h2>
+						</div>
+						<div class="conPricing_infoBox_cata">
+							<h4>收費方式</h4>
+							<p>當月帳單金額<br><span><strong>2.0</strong>%</span>服務費</p>
+						</div>
+						<div class="conPricing_infoBox_cata">
+							<h4>帳單管理</h4>
+							<ul>
+								<li class="true"><i class="fa fa-check-circle"></i>&nbsp;使用者權限管理</li>
+								<li class="true"><i class="fa fa-check-circle"></i>&nbsp;帳單報表</li>
+								<li class="true"><i class="fa fa-check-circle"></i>&nbsp;帳單示警</li>
+								<li class="true"><i class="fa fa-check-circle"></i>&nbsp;成本剖析</li>
+								<li class="true"><i class="fa fa-check-circle"></i>&nbsp;成本預測</li>
+							</ul>
+						</div>
+						<div class="conPricing_infoBox_cata">
+							<h4>自動化管理與最佳實踐建議</h4>
+							<ul>
+								<li class="true"><i class="fa fa-check-circle"></i>&nbsp;EC2/RDS 備份排程</li>
+								<li class="true"><i class="fa fa-check-circle"></i>&nbsp;EC2/RDS 開關機排程</li>
+								<li class="true"><i class="fa fa-check-circle"></i>&nbsp;EC2/RDS 自動備份</li>
+								<li class="true"><i class="fa fa-check-circle"></i>&nbsp;備份報告</li>
+								<li class="true"><i class="fa fa-check-circle"></i>&nbsp;效能報告</li>
+								<li class="true"><i class="fa fa-check-circle"></i>&nbsp;AWS 使用資產報告</li>
+								<li class="true"><i class="fa fa-check-circle"></i>&nbsp;可用性報告</li>
+								<li class="true"><i class="fa fa-check-circle"></i>&nbsp;資訊安全報告</li>
+							</ul>
+						</div>
+						<div class="conPricing_infoBox_cata">
+							<h4>成本控管</h4>
+							<ul>
+								<li class="true"><i class="fa fa-check-circle"></i>&nbsp;服務用量報告</li>
+								<li class="true"><i class="fa fa-check-circle"></i>&nbsp;EC2/RDS 低使用率報告</li>
+								<li class="true"><i class="fa fa-check-circle"></i>&nbsp;最適規格推薦</li>
+								<li class="true"><i class="fa fa-check-circle"></i>&nbsp;RI 使用率與涵蓋範圍報告</li>
+								<li class="true"><i class="fa fa-check-circle"></i>&nbsp;RI 最佳建議</li>
+							</ul>
+						</div>
+						<div class="conPricing_infoBox_cata">
+							<h4>服務監控</h4>
+							<ul>
+								<li class="true"><i class="fa fa-check-circle"></i>&nbsp;人工智慧服務監控</li>
+								<li class="true"><i class="fa fa-check-circle"></i>&nbsp;應用管理監控</li>
+							</ul>
+						</div>
+						<div class="conPricing_infoBox_cata">
+							<h4>跨雲管理</h4>
+							<ul>
+								<li class="true"><i class="fa fa-check-circle"></i>&nbsp;微軟 Azure 帳單管理</li>
+								<li class="true"><i class="fa fa-check-circle"></i>&nbsp;微軟 Azure 用量報告</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+
+				<!-- 手機顯示 -->
+				<ul class="conPricing_infoBox conPricing_mb">
+
+					<!-- 企業級 手機顯示-->
+					<li>
+						<a href="javascript:;" class="conPricing_click active">
+							<div class="conPricing_infoBox_title conPricing_infoBox_02">
+								<h2>企業級</h2>
+							</div>
+						</a>
+						<div class="conPricing_mbHide active">
+							<div class="conPricing_infoBox_cata">
+								<h4>收費方式</h4>
+								<p>當月帳單金額<br><span><strong>1.5</strong>%</span>服務費</p>
+							</div>
+							<div class="conPricing_infoBox_cata">
+								<h4>帳單管理</h4>
+								<ul>
+									<li class=""><i class="fa fa-check-circle"></i>&nbsp;使用者權限管理</li>
+									<li class="true"><i class="fa fa-check-circle"></i>&nbsp;帳單報表</li>
+									<li class="true"><i class="fa fa-check-circle"></i>&nbsp;帳單示警</li>
+									<li class="true"><i class="fa fa-check-circle"></i>&nbsp;成本剖析</li>
+									<li class="true"><i class="fa fa-check-circle"></i>&nbsp;成本預測</li>
+								</ul>
+							</div>
+							<div class="conPricing_infoBox_cata">
+								<h4>自動化管理與最佳實踐建議</h4>
+								<ul>
+									<li class="true"><i class="fa fa-check-circle"></i>&nbsp;EC2/RDS 備份排程</li>
+									<li class="true"><i class="fa fa-check-circle"></i>&nbsp;EC2/RDS 開關機排程</li>
+									<li class=""><i class="fa fa-check-circle"></i>&nbsp;EC2/RDS 自動備份</li>
+									<li class=""><i class="fa fa-check-circle"></i>&nbsp;備份報告</li>
+									<li class="true"><i class="fa fa-check-circle"></i>&nbsp;效能報告</li>
+									<li class="true"><i class="fa fa-check-circle"></i>&nbsp;AWS 使用資產報告</li>
+									<li class=""><i class="fa fa-check-circle"></i>&nbsp;可用性報告</li>
+									<li class=""><i class="fa fa-check-circle"></i>&nbsp;資訊安全報告</li>
+								</ul>
+							</div>
+							<div class="conPricing_infoBox_cata">
+								<h4>成本控管</h4>
+								<ul>
+									<li class="true"><i class="fa fa-check-circle"></i>&nbsp;服務用量報告</li>
+									<li class="true"><i class="fa fa-check-circle"></i>&nbsp;EC2/RDS 低使用率報告</li>
+									<li class="true"><i class="fa fa-check-circle"></i>&nbsp;最適規格推薦</li>
+									<li class=""><i class="fa fa-check-circle"></i>&nbsp;RI 使用率與涵蓋範圍報告</li>
+									<li class=""><i class="fa fa-check-circle"></i>&nbsp;RI 最佳建議</li>
+								</ul>
+							</div>
+							<div class="conPricing_infoBox_cata">
+								<h4>服務監控</h4>
+								<ul>
+									<li class="true"><i class="fa fa-check-circle"></i>&nbsp;人工智慧服務監控</li>
+									<li class=""><i class="fa fa-check-circle"></i>&nbsp;應用管理監控</li>
+								</ul>
+							</div>
+							<div class="conPricing_infoBox_cata">
+								<h4>跨雲管理</h4>
+								<ul>
+									<li class="true"><i class="fa fa-check-circle"></i>&nbsp;微軟 Azure 帳單管理</li>
+									<li class=""><i class="fa fa-check-circle"></i>&nbsp;微軟 Azure 用量報告</li>
+								</ul>
+							</div>
+						</div>
+						
+					</li>
+
+					<!-- 基礎級 手機顯示-->
+					<li>
+						<a href="javascript:;" class="conPricing_click">
+							<div class="conPricing_infoBox_title">
+								<h2>基礎級</h2>
+							</div>
+						</a>
+						<div class="conPricing_mbHide">
+							<div class="conPricing_infoBox_cata">
+								<h4>收費方式</h4>
+								<p>當月帳單金額<br><span><strong>0.8</strong>%</span>服務費</p>
+							</div>
+							<div class="conPricing_infoBox_cata">
+								<h4>帳單管理</h4>
+								<ul>
+									<li class=""><i class="fa fa-check-circle"></i>&nbsp;使用者權限管理</li>
+									<li class="true"><i class="fa fa-check-circle"></i>&nbsp;帳單報表</li>
+									<li class="true"><i class="fa fa-check-circle"></i>&nbsp;帳單示警</li>
+									<li class="true"><i class="fa fa-check-circle"></i>&nbsp;成本剖析</li>
+									<li class=""><i class="fa fa-check-circle"></i>&nbsp;成本預測</li>
+								</ul>
+							</div>
+							<div class="conPricing_infoBox_cata">
+								<h4>自動化管理與最佳實踐建議</h4>
+								<ul>
+									<li class="true"><i class="fa fa-check-circle"></i>&nbsp;EC2/RDS 備份排程</li>
+									<li class="true"><i class="fa fa-check-circle"></i>&nbsp;EC2/RDS 開關機排程</li>
+									<li class=""><i class="fa fa-check-circle"></i>&nbsp;EC2/RDS 自動備份</li>
+									<li class=""><i class="fa fa-check-circle"></i>&nbsp;備份報告</li>
+									<li class=""><i class="fa fa-check-circle"></i>&nbsp;效能報告</li>
+									<li class=""><i class="fa fa-check-circle"></i>&nbsp;AWS 使用資產報告</li>
+									<li class=""><i class="fa fa-check-circle"></i>&nbsp;可用性報告</li>
+									<li class=""><i class="fa fa-check-circle"></i>&nbsp;資訊安全報告</li>
+								</ul>
+							</div>
+							<div class="conPricing_infoBox_cata">
+								<h4>成本控管</h4>
+								<ul>
+									<li class=""><i class="fa fa-check-circle"></i>&nbsp;服務用量報告</li>
+									<li class=""><i class="fa fa-check-circle"></i>&nbsp;EC2/RDS 低使用率報告</li>
+									<li class=""><i class="fa fa-check-circle"></i>&nbsp;最適規格推薦</li>
+									<li class=""><i class="fa fa-check-circle"></i>&nbsp;RI 使用率與涵蓋範圍報告</li>
+									<li class=""><i class="fa fa-check-circle"></i>&nbsp;RI 最佳建議</li>
+								</ul>
+							</div>
+							<div class="conPricing_infoBox_cata">
+								<h4>服務監控</h4>
+								<ul>
+									<li class=""><i class="fa fa-check-circle"></i>&nbsp;人工智慧服務監控</li>
+									<li class=""><i class="fa fa-check-circle"></i>&nbsp;應用管理監控</li>
+								</ul>
+							</div>
+							<div class="conPricing_infoBox_cata">
+								<h4>跨雲管理</h4>
+								<ul>
+									<li class=""><i class="fa fa-check-circle"></i>&nbsp;微軟 Azure 帳單管理</li>
+									<li class=""><i class="fa fa-check-circle"></i>&nbsp;微軟 Azure 用量報告</li>
+								</ul>
+							</div>
+						</div>	
+					</li>
+
+
+					
+					<!-- 旗艦級 手機顯示-->
+					<li>
+						<a href="javascript:;" class="conPricing_click">
+							<div class="conPricing_infoBox_title conPricing_infoBox_03">
+								<h2>旗艦級</h2>
+							</div>
+						</a>
+						<div class="conPricing_mbHide">
+							<div class="conPricing_infoBox_cata">
+								<h4>收費方式</h4>
+								<p>當月帳單金額<br><span><strong>2.0</strong>%</span>服務費</p>
+							</div>
+							<div class="conPricing_infoBox_cata">
+								<h4>帳單管理</h4>
+								<ul>
+									<li class="true"><i class="fa fa-check-circle"></i>&nbsp;使用者權限管理</li>
+									<li class="true"><i class="fa fa-check-circle"></i>&nbsp;帳單報表</li>
+									<li class="true"><i class="fa fa-check-circle"></i>&nbsp;帳單示警</li>
+									<li class="true"><i class="fa fa-check-circle"></i>&nbsp;成本剖析</li>
+									<li class="true"><i class="fa fa-check-circle"></i>&nbsp;成本預測</li>
+								</ul>
+							</div>
+							<div class="conPricing_infoBox_cata">
+								<h4>自動化管理與最佳實踐建議</h4>
+								<ul>
+									<li class="true"><i class="fa fa-check-circle"></i>&nbsp;EC2/RDS 備份排程</li>
+									<li class="true"><i class="fa fa-check-circle"></i>&nbsp;EC2/RDS 開關機排程</li>
+									<li class="true"><i class="fa fa-check-circle"></i>&nbsp;EC2/RDS 自動備份</li>
+									<li class="true"><i class="fa fa-check-circle"></i>&nbsp;備份報告</li>
+									<li class="true"><i class="fa fa-check-circle"></i>&nbsp;效能報告</li>
+									<li class="true"><i class="fa fa-check-circle"></i>&nbsp;AWS 使用資產報告</li>
+									<li class="true"><i class="fa fa-check-circle"></i>&nbsp;可用性報告</li>
+									<li class="true"><i class="fa fa-check-circle"></i>&nbsp;資訊安全報告</li>
+								</ul>
+							</div>
+							<div class="conPricing_infoBox_cata">
+								<h4>成本控管</h4>
+								<ul>
+									<li class="true"><i class="fa fa-check-circle"></i>&nbsp;服務用量報告</li>
+									<li class="true"><i class="fa fa-check-circle"></i>&nbsp;EC2/RDS 低使用率報告</li>
+									<li class="true"><i class="fa fa-check-circle"></i>&nbsp;最適規格推薦</li>
+									<li class="true"><i class="fa fa-check-circle"></i>&nbsp;RI 使用率與涵蓋範圍報告</li>
+									<li class="true"><i class="fa fa-check-circle"></i>&nbsp;RI 最佳建議</li>
+								</ul>
+							</div>
+							<div class="conPricing_infoBox_cata">
+								<h4>服務監控</h4>
+								<ul>
+									<li class="true"><i class="fa fa-check-circle"></i>&nbsp;人工智慧服務監控</li>
+									<li class="true"><i class="fa fa-check-circle"></i>&nbsp;應用管理監控</li>
+								</ul>
+							</div>
+							<div class="conPricing_infoBox_cata">
+								<h4>跨雲管理</h4>
+								<ul>
+									<li class="true"><i class="fa fa-check-circle"></i>&nbsp;微軟 Azure 帳單管理</li>
+									<li class="true"><i class="fa fa-check-circle"></i>&nbsp;微軟 Azure 用量報告</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</section>
+		</div>
+		
+
+
+		<!-- 聯絡表單 -->
+		<div class="con contactCon" id="securityContact">
+			<section>
+				<h1>預約顧問解說</h1>
+				<div class="contactCon_form">
+						<dl>
+							<dt>姓名 *</dt>
+							<dd>
+								<input type="text" name="">
+							</dd>
+						</dl>
+						<dl>
+							<dt>電話 *</dt>
+							<dd>
+								<input type="tel" name="">
+							</dd>
+						</dl>
+						<dl>
+							<dt>E-mail *</dt>
+							<dd>
+								<input type="text" name="">
+							</dd>
+						</dl>
+						<dl>
+							<dt>公司</dt>
+							<dd>
+								<input type="text" name="">
+							</dd>
+						</dl>
+						<dl>
+							<dt>職稱</dt>
+							<dd>
+								<input type="text" name="">
+							</dd>
+						</dl>
+						<dl>
+							<dt>主旨 *</dt>
+							<dd>
+								<input type="text" name="">
+							</dd>
+						</dl>
+					<div>
+						<dl class="twodl">
+							<dt>內容 *</dt>
+							<dd>
+								<textarea type="text" name="" rows="5"></textarea>
+							</dd>
+						</dl>
+						<div class="formSubmit">
+							<div>* 為必填欄位</div>
+							<div>
+								<a href="" class="orangeBtn">SUBMIT</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</section>
+			<div class="contactCon_bg imgLiquid">
+				<img src="images/contact_bg.png">
+			</div>
+		</div>
+
+	</div>
+
+
+
+
+	<!-- FOOTER -->
+	<footer>
+		<section>
+			<div class="footer_logo">
+				<img src="images/logo_color.png">
+				<p>AWS 雲端專家，竭誠為您服務。</p>
+			</div>
+			<ul class="footer_websiteMap">
+				<li class="footer_websiteMap_box">
+					<ul class="footer_websiteMap_box_01">
+						<li>
+							<a href="">關於我們</a>
+						</li>
+						<li>
+							<a href="">聯絡我們</a>
+						</li>
+						<li>
+							<a href="">合作夥伴</a>
+						</li>
+					</ul>
+				</li>
+				<li class="footer_websiteMap_box">
+					<h5>雲端產品</h5>
+					<ul>
+						<li>
+							<a href="">Atlas</a>
+						</li>
+					</ul>
+				</li>
+				<li class="footer_websiteMap_box">
+					<h5>雲端解決方案</h5>
+					<ul>
+						<li>
+							<a href="">資訊安全</a>
+						</li>
+						<li>
+							<a href="">專線</a>
+						</li>
+						<li>
+							<a href="">備份及災難備援</a>
+						</li>
+						<li>
+							<a href="">物聯網 IoT</a>
+						</li>
+						<li>
+							<a href="">效能優化</a>
+						</li>
+						<li>
+							<a href="">大數據</a>
+						</li>
+					</ul>
+				</li>
+				<li class="footer_websiteMap_box">
+					<h5>部落格</h5>
+					<ul>
+						<li>
+							<a href="">最新消息</a>
+						</li>
+						<li>
+							<a href="">Atlas</a>
+						</li>
+						<li>
+							<a href="">資訊安全</a>
+						</li>
+						<li>
+							<a href="">專線</a>
+						</li>
+						<li>
+							<a href="">備份及災難備援</a>
+						</li>
+						<li>
+							<a href="">物聯網 IoT</a>
+						</li>
+						<li>
+							<a href="">效能優化</a>
+						</li>
+						<li>
+							<a href="">大數據</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</section>
+		<div class="footerDeep">
+			<section>
+				<div class="footerDeep_info">
+					<a href="https://www.ecloudvalley.com/zh-hant/security-terms-and-conditions/" target="_blank">資訊安全政策</a>
+					<a href="">隱私權政策</a>
+				</div>
+				<div class="footerDeep_copy">Copyright 2018 © eCloudvalley Digital Technology Co., Ltd. All Rights Reserved. </div>
+			</section>
+		</div>
+		<div class="gotop">
+			<a href="javascript:;"><img src="images/toTop.svg"></a>
+		</div>
+	</footer>
+</body>
+
+</html>
