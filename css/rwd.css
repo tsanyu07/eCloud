@@ -573,7 +573,7 @@
 @media(max-width:500px){
 
   .conBlue_features li{
-    width: 100%;
+   
   }
 
   .mainArticle_recommend_slide li{
@@ -597,11 +597,22 @@
   }
 
   .mainFea_features li{
-    width: 100%;
     margin-bottom: 30px;
-    padding: 0 15px;
+    padding: 0 10px;
   }
 
+  .mainFea_features_txt h2,.conBlue_features_txt h2{
+    margin-top: 0;
+    font-size: 1.1em;
+  }
+
+  .mainFea_features_txt p{
+    font-size: 12px;
+  }
+
+  .conBlue_features_txt p{
+    display: none;
+  }
 }
 
 @media(max-width:360px){
